@@ -4,6 +4,10 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/encryptedCredentials)](https://cran.r-project.org/package=encryptedCredentials)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build
+status](https://travis-ci.org/dirkschumacher/encryptedCredentials.svg?branch=master)](https://travis-ci.org/dirkschumacher/encryptedCredentials)
+[![Coverage
+status](https://codecov.io/gh/dirkschumacher/encryptedCredentials/branch/master/graph/badge.svg)](https://codecov.io/github/dirkschumacher/encryptedCredentials?branch=master)
 
 *WORK IN PROGRESS: use at your own risk*
 
@@ -50,13 +54,13 @@ use_encrypted_credentials()
 #> Created the credentials.yml.enc file. This is where your secrets are stored encryptedly.
 ```
 
+The command above creates a key stored in `master.key`.
+
 There are generally two options to supply a master key:
 
 1.  Having a `master.key` file in your working directory
 2.  Having an environment variable `R_ENCRYPTED_CRED_MASTER_KEY` with
     your key
-
-The command above creates a key stored in `master.key`.
 
 ### Store credentials
 
@@ -87,8 +91,8 @@ Its content looks like this:
 
 ``` r
 readLines("credentials.yml.enc")
-#> [1] "1dada6a114f975ab9c4f07df7f103e50df31d2878071c133a7dd8eff916a8c076f486f2d41e8403c7e9d592bf1f29a1a34f52ac89d2e38877eaea364dff8579d919f63b31c0bcbc8eab0c050f2979042add993933ae2e3e419aacfec52a31270c77511e4266c38d7153a06468a59920dcdcf4d565c0544855566d7e91d3e69347253d6b3cfc1"
-#> [2] "afbe5496d1861fa49da6023f44253ad9fd46ddbcb86be12d"
+#> [1] "626aa6d2f82e4067c3672fad1ff3acb455faf803de71cafa572a989655dabf08df6c3c27f1ae32709a476f8e402ac6e9c9fff9d345e293fd0d0050f9dc24f90b604a38c33f74466baec17798237524fdf14f35cac06058b6b6f4a1456eb12321394802584a933c96218417685f83f0899511ff6290a7257cf0131655ad190b8587f7f39cfff6"
+#> [2] "a885777389f4752fe790291856ecdfb355c1fd3f57d0bb96"
 ```
 
 ### Access credentials in your script or on a server
