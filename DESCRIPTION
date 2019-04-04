@@ -1,0 +1,25 @@
+Package: encryptedCredentials
+Title: Opinionated encrypted credentials
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Dirk",
+           family = "Schumacher",
+           role = c("aut", "cre"),
+           email = "mail@dirk-schumacher.net")
+Description: Store credentials securely in an encrypted file.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    yaml,
+    sodium
+RoxygenNote: 6.1.0
+Collate: 
+    'crypt.R'
+    'io.R'
+    'api.R'
+Suggests:
+    usethis,
+    git2r,
+    testthat,
+    withr

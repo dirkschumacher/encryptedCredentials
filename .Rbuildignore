@@ -1,0 +1,6 @@
+^credentials\.yml\.enc$
+^master\.key$
+^LICENSE\.md$
+^README\.Rmd$
+^encryptedCredentials\.Rproj$
+^\.Rproj\.user$
