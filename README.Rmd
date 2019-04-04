@@ -63,14 +63,14 @@ There are generally two options to supply a master key:
 
 ### Store credentials
 
-There is exported function used to replace the content in you encrypted yml file.
+You can use `write_encrypted_credentials` to replace/update the content in your encrypted yml file.
 
 ```{r}
 write_encrypted_credentials(
   list(
     databases = list(
       postgres_url = "postgres://...",
-      redit_url = "..."
+      redis_url = "..."
     ),
     aws = list(
       access_key_id = "abcded",

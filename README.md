@@ -64,15 +64,15 @@ There are generally two options to supply a master key:
 
 ### Store credentials
 
-There is exported function used to replace the content in you encrypted
-yml file.
+You can use `write_encrypted_credentials` to replace/update the content
+in your encrypted yml file.
 
 ``` r
 write_encrypted_credentials(
   list(
     databases = list(
       postgres_url = "postgres://...",
-      redit_url = "..."
+      redis_url = "..."
     ),
     aws = list(
       access_key_id = "abcded",
@@ -91,8 +91,8 @@ Its content looks like this:
 
 ``` r
 readLines("credentials.yml.enc")
-#> [1] "626aa6d2f82e4067c3672fad1ff3acb455faf803de71cafa572a989655dabf08df6c3c27f1ae32709a476f8e402ac6e9c9fff9d345e293fd0d0050f9dc24f90b604a38c33f74466baec17798237524fdf14f35cac06058b6b6f4a1456eb12321394802584a933c96218417685f83f0899511ff6290a7257cf0131655ad190b8587f7f39cfff6"
-#> [2] "a885777389f4752fe790291856ecdfb355c1fd3f57d0bb96"
+#> [1] "77bd5f22f807c99e26b340450f80ab1ba00332372580e0ffb769eb68b0ccfe1baa5b5b6c62a443060276d313bef06c3377c971f67a765ed614f1565b4fdd22d867ac49b408361c04003970c0c1e1ec36a8f5aada50c6c96c6858eb513622ff704212c4789c50ee33e1282eb872bea6ed61c1a3f333fec8a8b035656e100aa6ad5d54c90bdbae"
+#> [2] "1e9c32a43f6eca0ed5014bd05be615f76bd263b0141367b1"
 ```
 
 ### Access credentials in your script or on a server
@@ -106,7 +106,7 @@ credentials
 #> $databases$postgres_url
 #> [1] "postgres://..."
 #> 
-#> $databases$redit_url
+#> $databases$redis_url
 #> [1] "..."
 #> 
 #> 
