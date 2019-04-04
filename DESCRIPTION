@@ -22,4 +22,5 @@ Suggests:
     usethis,
     git2r,
     testthat,
-    withr
+    withr,
+    covr

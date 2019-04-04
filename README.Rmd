@@ -18,6 +18,8 @@ unlink("credentials.yml.enc")
 
 [![CRAN status](https://www.r-pkg.org/badges/version/encryptedCredentials)](https://cran.r-project.org/package=encryptedCredentials)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build status](https://travis-ci.org/dirkschumacher/encryptedCredentials.svg?branch=master)](https://travis-ci.org/dirkschumacher/encryptedCredentials)
+[![Coverage status](https://codecov.io/gh/dirkschumacher/encryptedCredentials/branch/master/graph/badge.svg)](https://codecov.io/github/dirkschumacher/encryptedCredentials?branch=master)
 
 _WORK IN PROGRESS: use at your own risk_
 
